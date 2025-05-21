@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 // Add to cart
 const addCart = async (req, res) => {
   try {
+    //this is a request body
     const { userId, productId } = req.body;
 
     // Validate userId and productId format
